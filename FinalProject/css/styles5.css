@@ -1,0 +1,77 @@
+header {
+  background-image: url(../images/panasonicbkg.jpg);
+
+
+}
+
+footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(127, 255, 212);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 320px) {
+    /* phone */
+    .container {
+      flex-direction: column;
+    }
+  
+    .header,
+    .main,
+    .footer {
+      flex: 1;
+    }
+  }
+
+  @media (min-width: 321px) and (max-width: 767px) {
+    /* tablet */
+    .container {
+      flex-direction: row;
+    }
+  
+    .header,
+    .main,
+    .footer {
+      flex: 1;
+    }
+  
+    .main {
+      flex: 2;
+    }
+  }
+
+  @media (min-width: 768px) {
+    /* Desktop */
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .header {
+      flex-basis: 33%;
+    }
+  
+    .main {
+      flex-basis: 66%;
+    }
+  
+    .footer {
+      flex-basis: 33%;
+    }
+  }
+
+
+  
