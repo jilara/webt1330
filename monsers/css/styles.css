@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, black 0%, #222222 25%, #333333 50%, #444444 75%, gray 100%);
+   
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  main {
+    padding: 0 1em;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1em;
+    width: 500px;
+      margin: 0 auto;
+      color: #fff;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+  }
+   /* Media query for tablets */
+   @media (max-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    header,
+    main,
+    sidebar {
+      flex: 1;
+    }
+  
+    sidebar {
+      display: none;
+    }
+  }
+  
+  /* Media query for iPhones */
+  @media (max-width: 576px) {
+    header,
+    main,
+    sidebar {
+      flex: 1;
+    }
+  
+    sidebar {
+      display: none;
+    }
+  }
+  
+  /* Media query for computers */
+  @media (min-width: 992px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    sidebar {
+      display: block;
+    }
+
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
